@@ -1,0 +1,76 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: 250px;
+  height: 90vh;
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: 1rem;
+  border-radius: 1rem;
+  /* background: linear-gradient(to top, #343a40, #5c6977); */
+  background: linear-gradient(to top, rgb(1, 1, 47), rgb(97, 97, 131));
+}
+
+.sidebar-header {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.sidebar-links li {
+  margin: 15px 0;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-links a:hover {
+  background-color: #495057;
+}
+
+.sidebar-links a svg {
+  margin-right: 10px;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.upgrade-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-btn:hover {
+  background-color: #0056b3;
+}

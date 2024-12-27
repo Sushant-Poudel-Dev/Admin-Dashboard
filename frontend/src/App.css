@@ -1,0 +1,264 @@
+body {
+  background-color: rgb(242, 241, 241);
+  margin-left: 2rem;
+  font-family: inter;
+}
+
+:root{
+  --Primary-Font-Color: color: rgba(0, 0, 0, 0.82);
+}
+
+/* =========== BOOKING PAGE ================== */
+
+.bookingPage h1 {
+  color: blue;
+  font-weight: 700;
+}
+
+.bookingPage p {
+  font-weight: 300;
+}
+
+.bookingPageNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.bookingPageTableHeader {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+  border-radius: 1rem 2rem 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.3rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: blue;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: rgba(255, 251, 251, 0.84);
+  justify-content: space-around;
+  align-items: center;
+  animation: 0.2s ease-out 0s 1 SlideToTop;
+}
+
+.search-barContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: fit-content;
+  margin-right: 2rem;
+  width: fit-content;
+}
+
+.search-bar {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.search-bar input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-family: inter;
+}
+
+.search-bar input::placeholder {
+  font-size: 0.8rem;
+}
+
+.search-bar input:hover {
+  box-shadow: 0px 0px 30px -18px;
+}
+
+.search-bar select:hover {
+  box-shadow: 0px 0px 30px -18px;
+}
+
+.search-bar select {
+  padding: 8px;
+  font-family: inter;
+  border: none;
+  box-shadow: 0px 0px 20px -18px;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.search-bar select option {
+  font-family: inter;
+  height: 2rem;
+}
+
+.bookingPageMainDiv {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.3rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  background-color: rgba(255, 251, 251, 0.84);
+  justify-content: space-around;
+  align-items: center;
+  max-height: 2rem;
+  animation: 0.2s ease-out 0s 1 SlideToTop;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+@keyframes SlideToTop {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bookingPageMainDiv div:last-child {
+  width: 10rem;
+}
+
+.bookingPageMainDiv div {
+  width: 8rem;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bookingPageMainDiv div:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.verticleLine {
+  border: 1px solid rgba(0, 0, 0, 0.187);
+  height: 3rem;
+  max-width: 0;
+}
+
+.booking-actions button {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  background: rgb(80, 132, 235);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 0px 0.15rem rgba(0, 0, 0, 0.06);
+  font-family: inter;
+}
+
+.booking-actions button:hover {
+  background: rgb(48, 99, 201);
+}
+
+.bookingPageMainDiv.clickStyle {
+  background-color: rgba(0, 0, 0, 0.015);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.booking-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.editingDivContainer {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 5rem;
+}
+
+.editingDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-width: 100%;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.editingDiv input {
+  max-width: 6rem;
+  height: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.editingBookingButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.editingBookingButtons button {
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  background: rgb(80, 132, 235);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 0px 0.15rem rgba(0, 0, 0, 0.06);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--Primary-Font-Color)
+}
+
+.pagination button {
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  background: transparent;
+  border-radius: 50%;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 0.15rem rgba(0, 0, 0, 0.06);
+  border: none;
+  color: rgba(0, 0, 0, 0.802);
+  font-family: inter;
+}
+
+.pagination button:hover {
+  background-color: rgba(0, 0, 0, 0.097);
+}
+
+.pagination button.active {
+  background-color: blue;
+  color: white;
+}
+
+.pagination button:disabled {
+  color: rgb(180, 178, 178);
+  cursor: auto;
+}
+
+.pagination button:first-child,
+.pagination button:last-child {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.pagination button:hover:first-child,
+.pagination button:hover:last-child {
+  background-color: rgba(0, 0, 0, 0.097);
+}
